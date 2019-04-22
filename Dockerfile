@@ -14,7 +14,8 @@ RUN apt-get install -y \
 
 # 安装常用python包,避免打包时重复下载
 RUN pip3 install Flask flask-assets flask-wtf flask-ckeditor flask-sqlalchemy redis pymongo gevent \
-    mongoengine flask-cors oss2 aliyun-python-sdk-core-v3 dicttoxml xmltodict pypinyin Pillow numpy ffmpeg-python \
+    mongoengine flask-cors oss2 aliyun-python-sdk-core-v3 dicttoxml xmltodict pypinyin Pillow numpy \
+    alipay-sdk-python ffmpeg-python \
     -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 WORKDIR /web
